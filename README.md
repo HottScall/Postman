@@ -47,3 +47,21 @@ Once you have a collection created you can create folders inside these within th
 
 Collections form the basis for advanced operations in POSTMAN. 
 
+
+<h3 align="center">HOW TO RUN A COLLECTION (COLLECTION RUNNER)</h3>
+
+
+Once you have a collection of requests stored you can run them all in a single request. 
+
+Click Collection -> Select the Options -> Select Run. A new window will open. 
+
+Click the collection or specific folder you want to run (ensure that you can see your requests you want to run within your window pane on the left). 
+
+You can select some additional information here, such as run within an Environment, how many iterations of the collection run you want to make, log the responses and others. 
+
+Once you’re happy, select run and a new tab will open with details of the collection run. It will give you details an overview and all the passed and failed requests, but you can also select to view the successful and failed request separately.
+
+You can run a high level overview by clicking Run Summary button. 
+
+You can also go back to your previous page by clicking the collection runner. 
+
