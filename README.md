@@ -133,7 +133,7 @@ console.log(“Value for URL is” + urlValue)
 
 This will return your string plus the value of the URL variable which in this case is https://reqres.in/
 
-Getting a variable at a Environment level:
+<h4 align="center">Getting a variable at a Environment level</h4>
 
 pm.globals.get(“addGlobalVarNameHere”)
 
@@ -146,7 +146,7 @@ pm.environment.get(“addGlobalVarNameHere”)
 To set a variable, you use the command: 
 pm.variables.set(“name”, “POSTMAN”)
 
-*NOTE* Setting a variable takes a key, value pair. Name in this instance is the key whilst POSTMAN is the value
+*NOTE* - Setting a variable takes a key, value pair. Name in this instance is the key whilst POSTMAN is the value
 
 You can then call that using:
 
@@ -154,6 +154,6 @@ console.log(pm.variables.get(“name”))
 
 Which returns: POSTMAN
 
-*NOTE* If you want to add scripts which run on every call to a script, you can select your collection, click edit, click pre-request scripts and add your scripts to the documentation bar below. 
+*NOTE* - If you want to add scripts which run on every call to a script, you can select your collection, click edit, click pre-request scripts and add your scripts to the documentation bar below. 
 
 
