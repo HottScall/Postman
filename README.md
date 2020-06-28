@@ -4,7 +4,7 @@ My notes from learning how to use postman
 
 <h2 align="center">CREATING AN API REQUEST</h2>
 
-HAVE YOUR API REQUEST READY
+<h3 align="center">HAVE YOUR API REQUEST READY</h3>
 
 - In this example I googled (sample rest app request) and went on website https://reqres.in/ 
 - Then I selected the GET request for SINGLE USER 
