@@ -1,5 +1,10 @@
 <h1 align="center">Postman</h1>
-My notes from learning how to use postman 
+
+Things covered in below tutorial:
+
+- Creating API requests 
+- Collections; what are they? Why use them? How to create them.
+- Variables; what are they? Why use them? How to create them.
 
 
 <h2 align="center">CREATING AN API REQUEST</h2>
@@ -40,7 +45,6 @@ New -> Collections -> Add details to make your collections.
 
 There a few features you can use in a collection such as sharing your collection with people, you can run a collection which runs all the requests inside your collection and you can also view the collection in a web browser. 
 
-
 <h3 align="center">CREATING FOLDERS INSIDE COLLECTIONS</h3>			
 
 Once you have a collection created you can create folders inside these within the options tab (…) An example for this, you can store all your GET requests in a single folder and all the POST requests in a separate folder. 
@@ -48,7 +52,6 @@ Once you have a collection created you can create folders inside these within th
 Collections form the basis for advanced operations in POSTMAN. 
 
 <h3 align="center">HOW TO RUN A COLLECTION (COLLECTION RUNNER)</h3>
-
 
 Once you have a collection of requests stored you can run them all in a single request. 
 
@@ -84,25 +87,28 @@ Variables are created in Collections and Environment but NOT in specific folders
 
 <h3 align="center">Creating and referring a variable in a collection</h3>
 
-Select the options tab (…) in the Collection or Folder 
-Click Edit 
-Select Variables 
-Add a name in the Variable Tab - Ensure there are no spaces at the end of your name and that you don’t add the / which appends the URL. 
-Add the variable value (URL in this case) in the initial value and save it
-Go to your requests, remove the initial URL value and add in your variable wrapped in double curly braces {{URL}}/here-is-the-rest-of-my-api-request
+- Select the options tab (…) in the Collection or Folder 
+- Click Edit 
+- Select Variables 
+- Add a name in the Variable Tab - Ensure there are no spaces at the end of your name and that you don’t add the / which appends the URL. 
+- Add the variable value (URL in this case) in the initial value and save it
+- Go to your requests, remove the initial URL value and add in your variable wrapped in double curly braces {{URL}}/here-is-the-rest-of-my-api-request
 
 <h3 align="center">Creating and referring a variable in an Environment</h3>
 
-In the top right of the screen you have your Environment
-Select the settings tab 
-Click Globals 
-Follow the process above 
-For a quick view of what global variables you have within your Environment click on the eye next your Environment for a quick view of what Environment you have and what globals are set. 
+- In the top right of the screen you have your Environment
+- Select the settings tab 
+- Click Globals 
+- Follow the process above 
+- For a quick view of what global variables you have within your Environment click on the eye next your Environment for a quick view of what Environment you have and what globals are set. 
 
  <h3 align="center">Useful tips for variables</h3>
-If you have a variable within your collection but you want to view the value of that variable (say you forget or somebody has shared a collection with you and you’re viewing it for the first time). You can create a Postman console, which will return the entire value of the request when you click send. To get the Postman Console;
+ 
+If you have a variable within your collection but you want to view the value of that variable (say you forget or somebody has shared a collection with you and you’re viewing it for the first time). You can create a Postman console, which will return the entire value of the request when you click send. 
 
-Click Views
-Select Show Postman Console
-A new tab will open and when you run a request the full value of that request is stored in the console. 
+To get the Postman Console;
+
+- Click Views
+- Select Show Postman Console
+- A new tab will open and when you run a request the full value of that request is stored in the console. 
 
