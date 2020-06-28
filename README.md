@@ -112,3 +112,48 @@ To get the Postman Console;
 - Select Show Postman Console
 - A new tab will open and when you run a request the full value of that request is stored in the console. 
 
+ <h3 align="center">Getting and setting Variables through Scripts</h3>
+
+- Open your console tab
+- Select one of your requests
+- Click on tests 
+- Within here you can add your scripts
+- You can log anything onto the console using console.log(“Hello”) which will print to the console when you run your test 
+
+<h4 align="center">Getting a variable at a collection level</h4>
+
+- pm.variables.get(“variableNameHere”)
+
+You can now set this to a variable and console.log the value. 
+
+Example:
+
+let urlValue = pm.variables.get(“URL”)
+console.log(“Value for URL is” + urlValue)
+
+This will return your string plus the value of the URL variable which in this case is https://reqres.in/
+
+Getting a variable at a Environment level:
+
+pm.globals.get(“addGlobalVarNameHere”)
+
+OR 
+
+pm.environment.get(“addGlobalVarNameHere”)
+
+<h4 align="center">Setting a variable at collection level</h4>
+
+To set a variable, you use the command: 
+pm.variables.set(“name”, “POSTMAN”)
+
+*NOTE* Setting a variable takes a key, value pair. Name in this instance is the key whilst POSTMAN is the value
+
+You can then call that using:
+
+console.log(pm.variables.get(“name”))
+
+Which returns: POSTMAN
+
+*NOTE* If you want to add scripts which run on every call to a script, you can select your collection, click edit, click pre-request scripts and add your scripts to the documentation bar below. 
+
+
