@@ -47,6 +47,48 @@ Once you have a collection created you can create folders inside these within th
 
 Collections form the basis for advanced operations in POSTMAN. 
 
+<h2 align="center">VARIABLES</h2>
+
+<h3 align="center">What are variables?</h3>
+
+The same as in coding, variables can be used as an element for data storage. 
+
+<h3 align="center">Why use variables?</h3>>
+
+So you can reuse those values at multiple places, like coding you can use variables to avoid repetition and to avoid having to redo work when values change, meaning if a value changes you only have to make the change at one location. 
+
+<h3 align="center">Creating variables</h3>
+
+Note that with your current Collection 1 that both the GET User request and GET UserList request both use the same initial URL  https://reqres.in/
+
+Variables are created in Collections and Environment but NOT in specific folders. 
+
+*NOTE* - Variables created within in Environment are now global variables. Be careful when setting these at Global Level. 
+
+<h3 align="center">Creating and referring a variable in a collection</h3>
+
+Select the options tab (…) in the Collection or Folder 
+Click Edit 
+Select Variables 
+Add a name in the Variable Tab - Ensure there are no spaces at the end of your name and that you don’t add the / which appends the URL. 
+Add the variable value (URL in this case) in the initial value and save it
+Go to your requests, remove the initial URL value and add in your variable wrapped in double curly braces {{URL}}/here-is-the-rest-of-my-api-request
+
+<h3 align="center">Creating and referring a variable in an Environment</h3>
+
+In the top right of the screen you have your Environment
+Select the settings tab 
+Click Globals 
+Follow the process above 
+For a quick view of what global variables you have within your Environment click on the eye next your Environment for a quick view of what Environment you have and what globals are set. 
+
+ <h3 align="center">Useful tips for variables</h3>
+If you have a variable within your collection but you want to view the value of that variable (say you forget or somebody has shared a collection with you and you’re viewing it for the first time). You can create a Postman console, which will return the entire value of the request when you click send. To get the Postman Console;
+
+Click Views
+Select Show Postman Console
+A new tab will open and when you run a request the full value of that request is stored in the console. 
+
 
 <h3 align="center">HOW TO RUN A COLLECTION (COLLECTION RUNNER)</h3>
 
